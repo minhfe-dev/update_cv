@@ -12,7 +12,7 @@ A web application that helps users update their CV based on job descriptions
 - Axios
 ### Back-end
 - Nodejs
-- Expres
+- Express
 ### AI
 - OpenAI API
 ## INSTALLTION
