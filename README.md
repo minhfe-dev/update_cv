@@ -17,7 +17,7 @@ A web application that helps users update their CV based on job descriptions
 - OpenAI API
 ## INSTALLTION
 ```bash
-git clone https://github.com/username/resume-ai.git
+git clone https://github.com/minhfe-dev/update_cv.git
 ```
 Install Front-end
 ```bash
