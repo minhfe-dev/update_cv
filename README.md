@@ -22,7 +22,7 @@ Clone repo: git clone https://github.com/username/resume-ai.git
 Install Front-end
 ```bash
 cd client
-npm run dev
+npm install
 ```
 Install Back-end
 ```bash
