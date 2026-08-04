@@ -1,13 +1,22 @@
-import express from "express";
+import express from 'express';
+import cors from 'cors';
+import db from './config/db.js';
 
 const app = express();
+app.use(cors());
+app.use(express.json());
+
+async function testConnection() {
+  try {
+    await db.query('SELECT 1');
+    console.log(' Kết nối MySQL thành công!');
+  } catch (err) {
+    console.error(' Lỗi kết nối MySQL:', err.message);
+  }
+}
+testConnection();
 
 const PORT = process.env.PORT || 3000;
-
-app.get("/", (req, res) => {
-  res.send("Hello Express ");
-});
-
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(` Server đang chạy tại port ${PORT}`);
 });
