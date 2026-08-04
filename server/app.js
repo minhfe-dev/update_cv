@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import db from './config/db.js';
-import aiRoutes from './routes/ai.routes.js';
+import aiRoutes from './routes/ai.openai.js';
 
 const app = express();
 app.use(cors());
